@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.N.T. | Local LLM Testcase Generator</title>
+    <meta name="description"
+        content="Generate high-quality test cases locally using Ollama and the B.L.A.S.T. protocol.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="app-container">
+        <header>
+            <h1>Testcase Pilot <small style="font-size: 0.6em; opacity: 0.6;">v1.0</small></h1>
+            <div class="status-badge">
+                <span class="status-indicator"></span>
+                <span>Ollama: llama3.2 Active</span>
+            </div>
+        </header>
+
+        <section id="chat-window">
+            <div class="message bot-message">
+                Hello! I am your AI Testcase Pilot. Paste your software requirements or user stories below, and I'll
+                generate a comprehensive test suite for you locally.
+            </div>
+        </section>
+
+        <footer class="input-area">
+            <input type="text" id="user-input"
+                placeholder="Type a requirement (e.g., 'A shopping cart with checkout')..." autocomplete="off">
+            <button id="send-btn">Generate</button>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
